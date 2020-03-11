@@ -1,5 +1,5 @@
 # What does this piece of code do?
-# Answer: 
+# Answer: Determinr whether the random number b is prime
 
 # Import libraries
 # randint allows drawing a random number, 
@@ -12,9 +12,13 @@ from math import ceil
 
 p=False
 while p==False:
+    #take notes
     p=True
+    #get a random number 1<=n<100 
     n = randint(1,100)
+    #u=higher intenger of n square root
     u = ceil(n**(0.5))
+    #judege if n can be devided evenly
     for i in range(2,u+1):
         if n%i == 0:
             p=False
