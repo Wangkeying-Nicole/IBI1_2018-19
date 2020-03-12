@@ -25,4 +25,5 @@ X=False
 Y=True
 Z=(X and not Y)or(Y and not X)
 print(Z)
-W=()
+W=(X!=Y)
+print(W)
